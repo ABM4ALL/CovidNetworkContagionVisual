@@ -1,5 +1,5 @@
 {
-    "bar": {
+    "infection_count_bar": {
         "title": {
             "text": "Realtime Health Statistics",
             "subtext": ""
@@ -48,7 +48,7 @@
         ],
         "updatedAt": "2022-12-16T08:34:17.217Z"
     },
-    "line": {
+    "infection_count_line": {
         "forceUpdate": false,
         "updatedAt": "2022-12-16T08:34:43.758Z",
         "grid": {
