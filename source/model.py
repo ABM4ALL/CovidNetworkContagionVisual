@@ -17,7 +17,7 @@ class CovidModel(Model):
 
     def create(self):
         self.agents: "AgentList[CovidAgent]" = self.create_agent_list(CovidAgent)
-        self.environment = self.create_environment(CovidEnvironment)
+        self.environment: CovidEnvironment = self.create_environment(CovidEnvironment)
         self.data_collector = self.create_data_collector(CovidDataCollector)
         self.network = self.create_network()
 

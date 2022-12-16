@@ -1,0 +1,195 @@
+{
+    "bar": {
+        "title": {
+            "text": "Realtime Health Statistics",
+            "subtext": ""
+        },
+        "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+                "type": "shadow"
+            }
+        },
+        "grid": {
+            "left": "3%",
+            "right": "4%",
+            "bottom": "3%",
+            "containLabel": true
+        },
+        "xAxis": [
+            {
+                "type": "category",
+                "data": [],
+                "axisTick": {
+                    "alignWithLabel": true
+                },
+                "axisLabel": {
+                    "rotate": 30,
+                    "interval": 0
+                },
+                "name": "",
+                "nameLocation": "end"
+            }
+        ],
+        "yAxis": [
+            {
+                "type": "value",
+                "name": "",
+                "nameLocation": "end"
+            }
+        ],
+        "series": [
+            {
+                "name": "Direct",
+                "type": "bar",
+                "barWidth": "60%",
+                "data": []
+            }
+        ],
+        "updatedAt": "2022-12-16T08:34:17.217Z"
+    },
+    "line": {
+        "forceUpdate": false,
+        "updatedAt": "2022-12-16T08:34:43.758Z",
+        "grid": {
+            "left": "3%",
+            "right": "4%",
+            "bottom": "3%",
+            "top": "11%",
+            "containLabel": true
+        },
+        "title": {
+            "text": "Health Statistics Trend",
+            "subtext": ""
+        },
+        "xAxis": {
+            "type": "value",
+            "scale": true,
+            "name": "",
+            "nameLocation": "end"
+        },
+        "yAxis": {
+            "type": "value",
+            "name": "",
+            "nameLocation": "end"
+        },
+        "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+                "type": "cross"
+            }
+        },
+        "series": [
+            {
+                "name": "not_infected",
+                "data": [],
+                "type": "line",
+                "smooth": true,
+                "lineStyle": {
+                    "color": "#c23531",
+                    "width": 2,
+                    "type": "solid"
+                },
+                "symbol": "emptyCircle",
+                "showSymbol": false,
+                "symbolSize": 4,
+                "itemStyle": {
+                    "color": "#c23531",
+                    "borderColor": "#000000",
+                    "borderType": "solid",
+                    "borderWidth": 1,
+                    "opacity": 1
+                }
+            },
+            {
+                "name": "infected",
+                "data": [],
+                "type": "line",
+                "smooth": true,
+                "lineStyle": {
+                    "color": "#2f4554",
+                    "width": 2,
+                    "type": "solid"
+                },
+                "symbol": "emptyCircle",
+                "showSymbol": false,
+                "symbolSize": 4,
+                "itemStyle": {
+                    "color": "#2f4554",
+                    "borderColor": "#000000",
+                    "borderType": "solid",
+                    "borderWidth": 1,
+                    "opacity": 1
+                }
+            },
+            {
+                "name": "recovered",
+                "data": [],
+                "type": "line",
+                "smooth": true,
+                "lineStyle": {
+                    "color": "#61a0a8",
+                    "width": 2,
+                    "type": "solid"
+                },
+                "symbol": "emptyCircle",
+                "showSymbol": false,
+                "symbolSize": 4,
+                "itemStyle": {
+                    "color": "#61a0a8",
+                    "borderColor": "#000000",
+                    "borderType": "solid",
+                    "borderWidth": 1,
+                    "opacity": 1
+                }
+            },
+            {
+                "name": "dead",
+                "data": [],
+                "type": "line",
+                "smooth": true,
+                "lineStyle": {
+                    "color": "#d48265",
+                    "width": 2,
+                    "type": "solid"
+                },
+                "symbol": "emptyCircle",
+                "showSymbol": false,
+                "symbolSize": 4,
+                "itemStyle": {
+                    "color": "#d48265",
+                    "borderColor": "#000000",
+                    "borderType": "solid",
+                    "borderWidth": 1,
+                    "opacity": 1
+                }
+            }
+        ],
+        "legend": {
+            "data": [
+                {
+                    "name": "not_infected"
+                },
+                {
+                    "name": "infected"
+                },
+                {
+                    "name": "recovered"
+                },
+                {
+                    "name": "dead"
+                }
+            ],
+            "orient": "vertical",
+            "show": true,
+            "type": "plain",
+            "left": "auto",
+            "right": "4%",
+            "top": "12%",
+            "bottom": "auto"
+        },
+        "textStyle": {
+            "color": "#000000"
+        }
+    }
+}
