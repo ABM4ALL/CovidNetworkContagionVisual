@@ -1,14 +1,8 @@
-# -*- coding:utf-8 -*-
-# @Time: 2022/12/15 16:00
-# @Author: Zhanyi Hou
-# @Email: 1295752786@qq.com
-# @File: visualizer.py.py
 from typing import TYPE_CHECKING
 from Melodie import FloatParam, Visualizer
-from source.data_info import id_health_state
 
 if TYPE_CHECKING:
-    from .model import CovidModel
+    from source.model import CovidModel
 
 
 class CovidVisualizer(Visualizer):
@@ -26,13 +20,12 @@ class CovidVisualizer(Visualizer):
             "dead": lambda: self.model.environment.s3
         })
 
-        self.plot_charts.add_barchart('bar').set_data_source(
-            {
-                "not_infected": lambda: self.model.environment.s0,
-                "infected": lambda: self.model.environment.s1,
-                "recovered": lambda: self.model.environment.s2,
-                "dead": lambda: self.model.environment.s3
-            })
+        self.plot_charts.add_barchart('bar').set_data_source({
+            "not_infected": lambda: self.model.environment.s0,
+            "infected": lambda: self.model.environment.s1,
+            "recovered": lambda: self.model.environment.s2,
+            "dead": lambda: self.model.environment.s3
+        })
 
         self.add_network('network',
                          lambda: self.model.network,
