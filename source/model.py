@@ -33,7 +33,7 @@ class CovidModel(Model):
         )
 
     def run(self):
-        for period in range(0, self.scenario.period_num):
+        for period in self.iterator(self.scenario.period_num):
             self.environment.agents_infection(self.agents)
             self.environment.agents_health_state_transition(self.agents)
             self.environment.calc_population_infection_state(self.agents)

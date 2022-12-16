@@ -6,8 +6,6 @@ from Melodie import NetworkAgent
 if TYPE_CHECKING:
     from source.scenario import CovidScenario
     from Melodie import AgentList
-    from source.grid import CovidSpot
-    from source.grid import CovidGrid
 
 
 class CovidAgent(NetworkAgent):
