@@ -29,8 +29,8 @@ class CovidVisualizer(Visualizer):
             "dead": lambda: self.model.environment.s3
         })
 
-        self.add_network('covid_contagion_network',
-                         lambda: self.model.network,
+        self.add_network(name='covid_contagion_network',
+                         network_getter=lambda: self.model.network,
                          var_getter=lambda agent: agent.health_state,
                          var_style={
                              0: {
